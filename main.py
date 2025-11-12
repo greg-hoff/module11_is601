@@ -18,6 +18,12 @@ app = FastAPI()
 # Setup templates directory
 templates = Jinja2Templates(directory="templates")
 
+# Health check endpoint
+@app.get("/health")
+async def health_check():
+    """Health check endpoint for Docker healthcheck"""
+    return {"status": "healthy"}
+
 # Pydantic model for request data
 class OperationRequest(BaseModel):
     a: float = Field(..., description="The first number")
