@@ -4,7 +4,7 @@ services:
   # Service: web
   web:
     build: .
-    container_name: fastapi_calculator_mod9
+    container_name: fastapi_calculator_mod10
     ports:
       - "8000:8000"
     volumes:
@@ -22,7 +22,7 @@ services:
   # Service: db (PostgreSQL)
   db:
     image: postgres
-    container_name: postgres_db
+    container_name: postgres_db_mod10
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -42,7 +42,7 @@ services:
   # Service: pgadmin
   pgadmin:
     image: dpage/pgadmin4  # Updated to a newer version
-    container_name: pgadmin
+    container_name: pgadmin_mod10
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
       PGADMIN_DEFAULT_PASSWORD: admin
