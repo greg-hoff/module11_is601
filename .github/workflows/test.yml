@@ -83,8 +83,8 @@ jobs:
         with:
           push: true
           tags: |
-            greghoff/module10_is601:latest
-            greghoff/module10_is601:${{ github.sha }}
+            greghoff/module11_is601:latest
+            greghoff/module11_is601:${{ github.sha }}
           platforms: linux/amd64,linux/arm64
-          cache-from: type=registry,ref=greghoff/module10_is601:cache
+          cache-from: type=registry,ref=greghoff/module11_is601:cache
           cache-to: type=inline,mode=max
