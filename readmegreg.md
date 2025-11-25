@@ -1,8 +1,15 @@
-pulled app files from instructor github for module 10
-copied new conftest for module 10
-pulled test_user for module 10 
-    took time to set up dockerfile, server startup, new dependencies and requirements
-set up test files for testing the schema, database, authentication, and dependencies
+Installed requirements
+pulled app files from greg's github for module 10
+renamed container for module 11
+copied app calculation files for models and schemas from instructor github for module 11
+
+set up test files for testing the new schema and models
+
+revise conftest and models so that the foreign keys aligned with the addition of the new calculation model and schema.
+
+added relationship definition in user.py 
+
+added and refined new tests for calculations and calculation schema
 
 ## Running Tests Locally
 
@@ -22,4 +29,4 @@ pytest tests/e2e/           # End-to-end tests only
 pytest tests/integration/test_user_auth.py --cov=app.models.user --cov-report=term-missing -v
 ```
 
-https://hub.docker.com/repository/docker/greghoff/module10_is601/general
+https://hub.docker.com/repository/docker/greghoff/module11_is601/general
