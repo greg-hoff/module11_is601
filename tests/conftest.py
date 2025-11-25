@@ -17,6 +17,7 @@ from sqlalchemy.exc import SQLAlchemyError, IntegrityError
 
 from app.database import Base, get_engine, get_sessionmaker
 from app.models.user import User
+from app.models.calculation import Calculation  # Import to ensure table creation
 from app.config import settings
 from app.database_init import init_db, drop_db
 
